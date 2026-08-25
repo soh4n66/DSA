@@ -1,0 +1,8 @@
+class Solution:
+    def missingMultiple(self, nums: List[int], k: int) -> int:
+        multiple = k
+        while True:
+            if multiple not in nums:
+                return multiple
+            else:
+                multiple = multiple+k
